@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Tree Visualizer</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div id="bTreeContainer">
+        <h1>B-Tree Visualizer</h1>
+        <p>Interactive Tool for Visualizing and Manipulating B-Trees</p>
+        <input type="text" id="keyInput" placeholder="Enter keys to insert">
+        <button onclick="insertKey()">Insert</button>
+        <button onclick="deleteKey()">Delete</button>
+        <button onclick="searchKey()">Search</button>
+        <button onclick="resetTree()">Reset</button>
+        <input type="text" id="degree" placeholder="Enter B-Tree Degree">
+        <button onclick="changeDegree()">Change Degree</button>
+        <div>
+            <input type="text" id="oldKey" placeholder="Old key ">
+            <input type="text" id="newKey" placeholder="New key ">
+            <button onclick="updateKey()">Update</button>
+        </div>
+        <div class="tree-container">
+            <img id="treeImage" src="/static/placeholder.png" alt="B-Tree Visualization">
+        </div>
+        <div class="status-message" id="statusMessage"></div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>  
