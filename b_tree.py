@@ -238,7 +238,7 @@ class BTree:
             self.update(old_key, new_key)
             self.print_tree(self.root)
 
-def main():
+def main(): # main
     B = BTree(2)  # this is degree 3 (max 2*3-1 = 5 keys)
     insert_keys = [1, 2, 3, 4, 5,6,7,8,9]
     delete_keys = []
