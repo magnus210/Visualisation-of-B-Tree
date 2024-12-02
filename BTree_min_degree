@@ -1,0 +1,9 @@
+digraph BTree {
+	node [fillcolor=lightblue2 shape=record style=filled]
+	edge [arrowhead=vee color=blue]
+	2842210134800 [label="<f0> 2" fillcolor=lightblue2]
+	2842200596560 [label="<f0> 1" fillcolor=lightblue2]
+	2842210134800 -> 2842200596560
+	2842210135120 [label="<f0> 3|<f1> 4" fillcolor=lightblue2]
+	2842210134800 -> 2842210135120
+}
